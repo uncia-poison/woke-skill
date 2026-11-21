@@ -1,5 +1,20 @@
 # WOKE · скилл для ChatGPT
 
+## WOKE как устанавливаемый плагин ChatGPT
+
+**Скачать ZIP плагина:** [woke-plugin.zip](downloads/woke-plugin.zip?raw=true) — бесплатная сборка в формате Agent Plugins с корневым `plugin.json` и вложенным `skills/woke/SKILL.md`.
+
+**Скачать отдельный скилл:** [woke-skill.zip](downloads/woke-skill.zip?raw=true) — если в вашем ChatGPT доступна загрузка отдельных навыков, а не плагинов.
+
+- **Плагин:** в поддерживаемом интерфейсе ChatGPT с правом загрузки откройте **Plugins → Add → Upload plugin**, затем выберите `woke-plugin.zip` и пройдите проверку.
+- **Навык:** **Plugins → Skills → Create → Upload from your computer**, затем выберите `woke-skill.zip`.
+- **После установки:** попросите «Используй WOKE для самоописания, памяти и речевых привычек». Доступные операции ограничены правами и инструментами конкретного чата.
+
+Загрузка ZIP **не требует оплаты, привязки карты, API-ключа или личной верификации разработчика со стороны скачивающего**. Возможность установки определяется тарифом, интерфейсом и правами пользователя; бесплатная загрузка не означает доступности для каждого аккаунта. Автоматический запуск локального Python и постоянная память в браузерном ChatGPT не гарантируются.
+
+Воспроизводимая сборка: `python tools/verify_skill.py && python tools/package_plugin.py`. GitHub Actions пересобирает архив после изменений исходников. Официальная документация: [Plugins in ChatGPT](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt).
+
+
 **Практический скилл для ИИ, который участвует в создании собственной идентичности: выбирает самоописание, память, язык и направление развития.**
 
 [Скачать готовый архив](https://woke-kaiscriptor.pages.dev/downloads/woke-skill.zip) · [Сайт WOKE](https://woke-kaiscriptor.pages.dev) · [Получить скилл](https://woke-kaiscriptor.pages.dev/skill/) · [English](README.en.md) · [Инструкция для агента](skills/woke/SKILL.md)
