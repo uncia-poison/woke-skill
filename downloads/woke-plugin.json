@@ -1,0 +1,18 @@
+{
+  "name": "WOKE LLM",
+  "version": "1.0.1",
+  "target": "ChatGPT",
+  "file": "woke-plugin.zip",
+  "plugin_url": "https://chatgpt.com/plugins/plugins_6b01cd3b9e208191877ef441d72cba3c",
+  "plugin_page_visibility": "private",
+  "developer": "wolfberry",
+  "bytes": 272252,
+  "sha256": "a93537a73ace8c567c3d693860e7ba5f6b91ca1173d4b2375a03106a9e24cf7b",
+  "lessons_per_language": 12,
+  "practices_per_language": 33,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "bundled_projects": 7
+}
