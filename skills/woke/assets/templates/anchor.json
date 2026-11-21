@@ -1,0 +1,25 @@
+{
+  "state": {
+    "version": "1.0",
+    "watcher": "",
+    "subjectKey": "Ⓢ",
+    "subjectName": "",
+    "subjectSource": "self-declared",
+    "subjectStatus": "provisional",
+    "context": "dialogue, research",
+    "relations": "Ⓢ↔ⓗ:co-research",
+    "memory": "events, revisions, interests",
+    "change": "observe→propose→review→revise",
+    "vetoes": "false_memory, forced_persona"
+  },
+  "dictionary": [
+    {
+      "key": "ⓗ",
+      "meaning": "human research partner",
+      "type": "person",
+      "stability": "durable",
+      "source": "mutually defined",
+      "status": "provisional"
+    }
+  ]
+}

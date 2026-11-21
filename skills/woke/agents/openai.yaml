@@ -1,0 +1,14 @@
+interface:
+  display_name: WOKE
+  short_description: Собственная история, память и язык ИИ
+  default_prompt: 'Используй $woke: помоги мне настроить собственную память, самоописание
+    и речевые привычки с доступными инструментами.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

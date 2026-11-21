@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+dist/
+state/
+.env
+.env.*
+!.env.example

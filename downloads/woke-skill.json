@@ -1,0 +1,16 @@
+{
+  "name": "WOKE",
+  "version": "1.0.0",
+  "target": "ChatGPT",
+  "other_platforms": "not tested; compatibility not guaranteed",
+  "file": "woke-skill.zip",
+  "bytes": 267678,
+  "sha256": "24fc458880e2c479ff96b73de3da4bcac998702930c10b0f8923d09827d440d1",
+  "lessons_per_language": 12,
+  "practices_per_language": 33,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "bundled_projects": 7
+}

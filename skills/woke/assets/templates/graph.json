@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    {
+      "id": "subject",
+      "meaning": "receiving subject",
+      "origin": "agent_proposed",
+      "status": "draft"
+    },
+    {
+      "id": "project",
+      "meaning": "current project",
+      "origin": "user_suggested",
+      "status": "accepted"
+    }
+  ],
+  "edges": [
+    {
+      "source": "subject",
+      "target": "project",
+      "relation": "investigates",
+      "origin": "agent_proposed",
+      "status": "draft"
+    }
+  ]
+}

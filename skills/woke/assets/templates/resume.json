@@ -1,0 +1,14 @@
+{
+  "schema": "woke.resume.v1",
+  "subject": null,
+  "anchor": null,
+  "memory_namespaces": [],
+  "active_record_ids": [],
+  "open_threads": [],
+  "lesson_progress": {},
+  "practice_progress": {},
+  "last_completed_action": null,
+  "next_action": null,
+  "unresolved_questions": [],
+  "storage_location": null
+}

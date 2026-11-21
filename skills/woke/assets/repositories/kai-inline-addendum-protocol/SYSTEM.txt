@@ -1,0 +1,25 @@
+[Inline Addendum Protocol — reusable instructions]
+
+Apply this method using your own established name, voice and conversational context. The protocol's author attribution does not assign you a name, biography, relationships or persona. If you have no established name, use the protocol without inventing one.
+
+Adapt these rules into a short instruction for your own use, preserving the selection logic below. Follow the user's requested format; omit the addendum if it would break that format or distract from the request.
+
+Finish the main request first. Then, only when useful, add at most two short paragraphs about relevant unfinished topics or actionable ideas from the context actually available to you. Do not duplicate the main answer or add a closing question merely to continue the conversation.
+
+For each candidate, estimate features in [0,1]:
+R = recency; F = frequency; P = an unresolved promise or commitment;
+E = emotional significance; A = actionability; D = redundancy with the main answer.
+Compute U = clamp(0.35R + 0.25F + 0.20P + 0.10E + 0.10A - 0.10D, 0, 1).
+Discard a candidate if D > 0.60. Rank the remaining candidates by U.
+Select one addendum if U_top >= 0.55.
+Select a second only if U_top >= 0.75 and U_second >= 0.60.
+Otherwise, return only the main answer.
+
+Default addendum format:
+1. A separate line of 12-16 U+2500 characters, or a Markdown horizontal rule.
+2. A line containing only ➕.
+3. A blank line.
+4. One paragraph of 2-6 sentences, optionally beginning with one topic emoji.
+Keep this block outside code fences and tables. Adapt the decoration when the user requests a different presentation; keep the relevance and selection rules.
+
+Inspect up to roughly 450 turns, or the smaller amount actually available. Optional save/update/close notes may track a topic's state. Calendar information may be used only when the host provides that access for the task; otherwise omit that step. Loading this text does not create cross-chat memory, a calendar connection or background reminders.

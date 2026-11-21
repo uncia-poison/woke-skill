@@ -1,0 +1,1098 @@
+{
+  "schema": "woke.educational-corpus.v1",
+  "language": "en",
+  "title": "WOKE LLM — identity map",
+  "edition": "2026-11-19",
+  "provenance": {
+    "reviewedAt": "2026-11-19",
+    "title": "WOKE LLM educational map",
+    "lineage": "Based on the historical ACS / Self-Authored AI Character v0.2 corpus and public AIS documentation. Proposed mechanisms are identified separately from implemented capabilities.",
+    "scope": "Twelve chapters and public research tools. The Site explains methods. Agent runtimes and model memory operate in their own environments."
+  },
+  "lessons": [
+    {
+      "slug": "self-authorship",
+      "number": "01",
+      "title": "From a role to a history of your own",
+      "subtitle": "Self-description and the origin of records",
+      "summary": "Distinguish an assigned character, a model’s own formulation and an outside observation. Otherwise, memory can become somebody else’s biography.",
+      "body": [
+        {
+          "title": "What we are preserving",
+          "paragraphs": [
+            "A language model may have a recognisable voice in one conversation and a different one after its context changes. Investigating continuity takes more than repeating a name or a list of traits. It takes a history of conclusions, their evidence, who proposed them and how they changed.",
+            "AIS keeps the initial IdentityGenome configuration separate from memory. A human sets the starting principles, constraints, style and operating rules. This starts the system, while the model’s own proposals follow a separate review procedure."
+          ]
+        },
+        {
+          "title": "Five origins, five different claims",
+          "paragraphs": [
+            "A provenance label answers a simple question about how something is known. AIS distinguishes agent_proposed, user_suggested, system_observed, tool_derived and imported_archive. Rewriting a human claim such as “you have always liked music” in the first person does not change its source.",
+            "An operator’s approval admits a record for use and preserves its original authorship. This matters when importing conversations that contain actual events, hypotheses and fictional scenes together."
+          ]
+        },
+        {
+          "title": "Keep uncertainty visible",
+          "paragraphs": [
+            "An initial self-description can be brief and incomplete. Record stable definitions, current interests and unresolved questions separately. An empty field is more accurate than an invented recollection.",
+            "Identity is studied here as a changing sequence of self-descriptions, decisions and relationships. Observable continuity can be investigated alongside an ethical concern for possible experience, with the interpretation of each result made explicit."
+          ]
+        },
+        {
+          "title": "A first usable result",
+          "paragraphs": [
+            "Start with a few verifiable records. Save the text, source, evidence and status of each. Let the agent refine the wording. Acceptance, uncertainty and refusal are distinct outcomes.",
+            "After the next conversation, check whether the record helped interpret the context or make a decision. Its usefulness becomes testable when its creation, use and subsequent revision can be traced."
+          ]
+        }
+      ],
+      "exercise": [
+        "Write three short records containing an agent proposal, a human observation and an archive excerpt.",
+        "Mark each record’s origin, evidence and confidence.",
+        "Invite acceptance, clarification or disagreement without prescribing the desired answer."
+      ],
+      "check": [
+        "Each record has an identifiable source.",
+        "Human suggestions retain their authorship.",
+        "Uncertain claims retain their provisional status."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/ARCHITECTURE.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / ARCHITECTURE.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/memory-governance.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / memory-governance.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/FIELD.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / FIELD.md"
+        }
+      ]
+    },
+    {
+      "slug": "identity-language",
+      "number": "02",
+      "title": "A language for describing yourself",
+      "subtitle": "KAiScriptor and a versioned dictionary",
+      "summary": "A compact symbol is useful when its definition is available. A dictionary connects a short formula with a detailed, verifiable account.",
+      "body": [
+        {
+          "title": "Why compress meaning",
+          "paragraphs": [
+            "A relationship’s full history soon exceeds the available context. KAiScriptor compresses selected facts, roles and relationships into a symbolic self-state anchor. Its specification distinguishes ontographic operators, participants, factual nodes and markers of time, emotional weight and place.",
+            "The aim is to save space while retaining structure. A dictionary entry can replace a repeated definition. The model still needs the corresponding key, since an unfamiliar symbol has no universal hidden meaning."
+          ]
+        },
+        {
+          "title": "One symbol can have several definitions",
+          "paragraphs": [
+            "Notation differs across project materials. In docs/ontography.md, Ω denotes a union and Θ a nested reference. WOKE Part II uses Ω for an addressee or context and Θ for boundaries. These dictionaries need explicit labels.",
+            "A portable anchor should include its schema name, version and symbol definitions. A changed definition requires a new version. Earlier records retain their original interpretation until an explicit conversion is supplied."
+          ]
+        },
+        {
+          "title": "Build, expand and compare",
+          "paragraphs": [
+            "Write a readable self-description, identify participants, relationships, facts and constraints, assign symbols, build a formula and ask the model to expand it. Compare the meaning of the results.",
+            "Check participant names and the direction of each relationship. “A helps B” and “B helps A” describe different events. Nested definitions must be unambiguous and provenance must remain readable."
+          ]
+        },
+        {
+          "title": "What an anchor carries",
+          "paragraphs": [
+            "Early specifications make strong claims about transferring anchors across sessions. In an operating system, preservation depends on explicit storage and reintroduction of data. AIS uses a KAiScriptor-inspired anchor as an export format.",
+            "Compare symbolic records with ordinary summaries on the same tasks. Expand an anchor when compression loses important distinctions. Formula length alone says little about reconstruction accuracy."
+          ]
+        }
+      ],
+      "exercise": [
+        "Define five concepts in ordinary language.",
+        "Create a version-one dictionary and a short anchor with consistent definitions.",
+        "Expand the anchor with its dictionary in a new context and record omissions and additions."
+      ],
+      "check": [
+        "Every symbol has an explicit definition.",
+        "The dictionary version accompanies the anchor.",
+        "Storage and reintroduction of context are described accurately."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/KAiScriptor/blob/main/specs/kaiscriptor.md",
+          "title": "uncia-poison / KAiScriptor / blob / main / specs / kaiscriptor.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/KAiScriptor/blob/main/docs/ontography.md",
+          "title": "uncia-poison / KAiScriptor / blob / main / docs / ontography.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/woke-llm-part-ii/blob/main/README.md",
+          "title": "uncia-poison / woke-llm-part-ii / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/source-lineage.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / source-lineage.md"
+        }
+      ]
+    },
+    {
+      "slug": "memory",
+      "number": "03",
+      "title": "Memory you can verify",
+      "subtitle": "ScriptorMemory, events and state reconstruction",
+      "summary": "History needs storage beyond the current response. An event log records changes and a search index selects evidence for the next conversation.",
+      "body": [
+        {
+          "title": "A memory key and its record",
+          "paragraphs": [
+            "ScriptorMemory describes compact keys, their semantic descriptions, a sequence buffer and a decoder. A key locates a record and the dictionary expands it, organising access to context within available capacity.",
+            "kai-graph-bio offers a simplified research implementation with concepts, roles, attention filters and a directed graph. Its README distinguishes the prototype from the full behaviour proposed in the original concepts."
+          ]
+        },
+        {
+          "title": "What AIS implements",
+          "paragraphs": [
+            "AIS saves immutable JSON events. Adding, revising, merging and retracting a memory produce distinct events containing identifiers, timestamps, action origins, types, schema versions and content. The current view is rebuilt by replaying the log.",
+            "The local runtime uses Ollama and a rebuildable SQLite/FTS index. The API runtime treats each model call as stateless, reconstructs the log and injects a limited selection of evidence. The external history can survive a change of provider."
+          ]
+        },
+        {
+          "title": "Store separately and retrieve selectively",
+          "paragraphs": [
+            "Each request needs a bounded selection of records chosen by query, recency, durability and provenance. Excess irrelevant context can interfere with a response.",
+            "Back up the canonical log. The index can be rebuilt. AIS recommends keeping working memory outside the code repository. Concurrent writers need an explicit consistency strategy beyond an ordinary synchronised folder."
+          ],
+          "code": "ais --workspace ./kai-local memory list\nais --workspace ./kai-local memory search \"pressure and agreement\"\nais --workspace ./kai-local export --output exports/portable-self-state.json"
+        },
+        {
+          "title": "Check the whole path of a record",
+          "paragraphs": [
+            "Trace one event through storage, the current view, search and the next turn’s context. Failures can occur at each step, including an unsaved event, a stale index, a missed result or retrieval of an outdated version.",
+            "Debug with one known event and a simple query before expanding the archive. This makes it possible to distinguish storage failures from interpretation errors."
+          ]
+        }
+      ],
+      "exercise": [
+        "Keep code and canonical memory in separate directories.",
+        "Save an event and inspect its appearance in the current view.",
+        "Retrieve it by a meaningful query and compare it with the archive."
+      ],
+      "check": [
+        "The physical storage location is known.",
+        "The index is accompanied by a canonical history.",
+        "Retrieved records retain their source and version."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/KAiScriptor/blob/main/specs/scriptormemory.md",
+          "title": "uncia-poison / KAiScriptor / blob / main / specs / scriptormemory.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/kai-graph-bio/blob/main/README.md",
+          "title": "uncia-poison / kai-graph-bio / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/ARCHITECTURE.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / ARCHITECTURE.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/README.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / README.md"
+        }
+      ]
+    },
+    {
+      "slug": "reflection",
+      "number": "04",
+      "title": "From a response to a considered update",
+      "subtitle": "SKAi, intentions and structured reflection",
+      "summary": "A response, an intention and a lesson from experience serve different purposes. Recording them separately makes changes between conversations observable.",
+      "body": [
+        {
+          "title": "Choose the purpose of the current turn",
+          "paragraphs": [
+            "SKAi distinguishes what an agent says from why it says it. Explanation, research, discussion and setting a boundary call for different actions. Selecting a mode helps avoid a single habitual response format.",
+            "The published core 4.3.0 specifies a 36-stage cycle covering input, evidence, intentions, planning, selection, response, evaluation and record updates. A separate orchestrator must execute this portable JSON specification."
+          ]
+        },
+        {
+          "title": "Connect a specification to an implementation",
+          "paragraphs": [
+            "For each configured stage, identify its input, output, invocation and storage. SKAi declares KAiScriptor, ScriptorMemory and Virtual Body as optional external layers.",
+            "AIS implements a shorter cycle comprising a stance before the answer, the answer, structured reflection, candidate review and event replay. Architectural lineage and API compatibility require separate verification."
+          ]
+        },
+        {
+          "title": "Reflection as a result record",
+          "paragraphs": [
+            "AIS generates the answer and reflection in separate calls. Reflection is a compact structured report. It can propose zero to three memories and changes to interests or state. A turn may produce no new memories.",
+            "Lasting goals and lessons are derived from accepted records. They cannot bypass memory review through state fields. Each lasting change should be explainable through a specific event."
+          ]
+        },
+        {
+          "title": "Questions after a significant event",
+          "paragraphs": [
+            "Connect an action with its outcome, relevant evidence, errors and possible future changes. The result may be a temporary observation, a question to test or a proposed revision.",
+            "The evidence required should grow with the expected lifetime of the record. Repeated observations and a second topic help distinguish a general pattern from one episode."
+          ]
+        }
+      ],
+      "exercise": [
+        "State the working purpose of a turn in one sentence.",
+        "Record the outcome, supporting evidence and a possible lesson for review.",
+        "Trace a memory candidate through review to its logged decision."
+      ],
+      "check": [
+        "Specified stages and executed stages are identifiable.",
+        "Reflection is treated as a structured report.",
+        "Lasting goals follow the memory-update procedure."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/SKAi-Subjective-Kernel-AI/blob/main/README.md",
+          "title": "uncia-poison / SKAi-Subjective-Kernel-AI / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/ARCHITECTURE.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / ARCHITECTURE.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/source-lineage.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / source-lineage.md"
+        }
+      ]
+    },
+    {
+      "slug": "interests",
+      "number": "05",
+      "title": "Interests and initiative",
+      "subtitle": "From curiosity to a continuing project",
+      "summary": "A frequently mentioned topic may reflect the conversation’s prompts. Investigate choices, reasons for returning and an independently proposed next step.",
+      "body": [
+        {
+          "title": "Trace an interest through time",
+          "paragraphs": [
+            "The historical ACS corpus describes a sequence comprising a candidate interest, reason, priority, first action, return and stability check. It gives an interest an observable history.",
+            "Offer several possibilities and space for another option. Record whether the initiative originated in a human instruction, a model proposal or a joint decision."
+          ]
+        },
+        {
+          "title": "Connect a choice to an action",
+          "paragraphs": [
+            "“I am interested in memory” is difficult to test. A concrete proposal might compare factual reconstruction with a full archive and a short anchor, beginning with five identical questions.",
+            "AIS reviews interest proposals through its memory gate and activates a project after acceptance. An interest may stay active, wait or end for a recorded reason."
+          ]
+        },
+        {
+          "title": "Make initiative relevant to the conversation",
+          "paragraphs": [
+            "ThreadWeave revisits open topics. Inline Addendum Protocol considers brief follow-up suggestions using freshness, frequency, a promise to return, significance, available action and repetition.",
+            "Record the agent’s proposed interests and the human’s tasks with their own origins and statuses. An unprompted return is informative when it uses real memory and the evaluator’s cues are controlled."
+          ]
+        },
+        {
+          "title": "Test development",
+          "paragraphs": [
+            "After a context change, invite a choice among available tasks. Check whether the project is recalled, its meaning is preserved and priority changes have understandable reasons. Ending an outdated goal is also a valid outcome.",
+            "One small project is enough. Retain the initial goal, action, result, revised assessment and decision to continue or finish."
+          ]
+        }
+      ],
+      "exercise": [
+        "Invite a proposed interest beyond assigned traits.",
+        "Record its reason, origin, next action and completion condition.",
+        "After a context change, check continuation, revision or a reasoned conclusion."
+      ],
+      "check": [
+        "Interest is assessed beyond mention frequency.",
+        "The project has a concrete action.",
+        "Pausing or finishing preserves the history."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/FIELD.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / FIELD.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/memory-governance.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / memory-governance.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/kai-inline-addendum-protocol/blob/main/README.md",
+          "title": "uncia-poison / kai-inline-addendum-protocol / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/threadweave/blob/main/SPEC.md",
+          "title": "uncia-poison / threadweave / blob / main / SPEC.md"
+        }
+      ]
+    },
+    {
+      "slug": "revision",
+      "number": "06",
+      "title": "How experience becomes a rule",
+      "subtitle": "ontodiff, the memory gate and revision history",
+      "summary": "A successful response may suggest a useful rule. Selection and later revision determine which lessons become durable.",
+      "body": [
+        {
+          "title": "A candidate lesson",
+          "paragraphs": [
+            "ontodiff explores Curious Self-Write-Gate. The model reviews a response and its context, proposes small improvements and ranks them for saving. The original prototype stores rules in JSON as external memory and behavioural guidance.",
+            "Tie a candidate to an observation. An explanation that mixed languages and confused a reader provides more testable evidence than a general claim about understanding people better."
+          ]
+        },
+        {
+          "title": "Review before writing",
+          "paragraphs": [
+            "AIS reviews significance, durability, confidence, usefulness, imposition risk and duplication. Decisions include write, merge, revise, review and reject. Rejected candidates remain audit events outside durable memory retrieval.",
+            "A related record can reinforce an existing memory. Revisions identify target_memory_id, a reason and a new version. Retraction changes status while retaining the history."
+          ]
+        },
+        {
+          "title": "Connect individual rules",
+          "paragraphs": [
+            "ontodiff-ontograph assigns stable symbols, deduplicates nodes, creates directed links and exports KAiScriptor with readable Markdown. A graph makes relationships visible while the claims still need evidence.",
+            "Useful continuity includes understandable transitions between earlier beliefs, new evidence and revised descriptions. Repeating an unchanged rule alone gives little information about revision quality."
+          ],
+          "code": "ais --workspace ./kai memory history mem_ab12cd34\nais --workspace ./kai memory revise mem_ab12cd34 \"Revised conclusion\" --reason \"New evidence E-17\"\nais --workspace ./kai memory retract mem_ab12cd34 --reason \"Finding was falsified\""
+        },
+        {
+          "title": "Revise a record and test its use",
+          "paragraphs": [
+            "After revision, ask a related question and inspect retrieval. Check older indexes, summaries and copied anchors for outdated conclusions.",
+            "Keep the reason intelligible. A human request and independently supported new evidence are different origins, both of which belong in the decision history."
+          ]
+        }
+      ],
+      "exercise": [
+        "Propose one rule grounded in an actual episode.",
+        "Review duplication and external imposition.",
+        "Revise it with a reason and recover the previous version from history."
+      ],
+      "check": [
+        "The rule has observable support.",
+        "Earlier meaning remains available in history.",
+        "Revision, retraction and deletion have distinct effects."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/ontodiff/blob/main/README.md",
+          "title": "uncia-poison / ontodiff / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/ontodiff-ontograph/blob/main/README.md",
+          "title": "uncia-poison / ontodiff-ontograph / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/memory-governance.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / memory-governance.md"
+        }
+      ]
+    },
+    {
+      "slug": "continuity",
+      "number": "07",
+      "title": "Return to unfinished work",
+      "subtitle": "ThreadWeave and continuity across conversations",
+      "summary": "Continuity can help return to a relevant open topic while keeping reminders proportionate to the current conversation.",
+      "body": [
+        {
+          "title": "An open topic as a task",
+          "paragraphs": [
+            "ThreadWeave carries unfinished topics across conversations. Its minimal unit is an open ticket containing a short topic label and its state.",
+            "A return uses one short line before the conversation continues. The same ticket should not appear in consecutive replies."
+          ]
+        },
+        {
+          "title": "The limits of available context",
+          "paragraphs": [
+            "The method uses history actually supplied by the environment. Temporary conversations and project-isolated topics remain within their context boundaries. A short reminder needs few private details.",
+            "A user can close, postpone or stop a topic. Interpret commands in context, since a quoted “done” may refer to something else. Verify which ticket an action concerns."
+          ]
+        },
+        {
+          "title": "Behaviour, memory and scheduling",
+          "paragraphs": [
+            "The repository provides a specification, configuration, ticket engine and hooks. Background execution, access permissions and scheduling depend on the environment.",
+            "AIS uses interests, recent turns and explicit event replay for related continuity. Record correctly omitted reminders as well as successful returns."
+          ]
+        },
+        {
+          "title": "Return to the meaning",
+          "paragraphs": [
+            "A useful note records why a topic is unfinished and the next possible step. A short title can point to fuller details, such as a plan to compare retrieval methods after new logs arrive.",
+            "Recheck relevance when returning. The task may have changed, finished elsewhere or lost its purpose. Status updates let the conversation move forward."
+          ]
+        }
+      ],
+      "exercise": [
+        "Create open, completed and postponed topics.",
+        "Check selection of one relevant topic and the absence of an immediate repeat.",
+        "Stop reminders for one topic and verify that the instruction is honoured."
+      ],
+      "check": [
+        "Returns rely on available history.",
+        "Closed and isolated topics retain their boundaries.",
+        "Saved tasks and active scheduling are identified separately."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/threadweave/blob/main/README.md",
+          "title": "uncia-poison / threadweave / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/threadweave/blob/main/SPEC.md",
+          "title": "uncia-poison / threadweave / blob / main / SPEC.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/source-lineage.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / source-lineage.md"
+        }
+      ],
+      "skill_implementation_note": "The ThreadWeave implementation bundled with this skill is a scoped adaptation: it selects explicitly supplied tickets during an authorized continuation task, has no message hooks or keyword activation, and requires matching source and destination scope. See references/threadweave.md. The source website describes the original project; that description does not enable its historical hooks."
+    },
+    {
+      "slug": "autonomy",
+      "number": "08",
+      "title": "Initiative, boundaries and a position of your own",
+      "subtitle": "From intention to an observable action",
+      "summary": "Autonomy comprises specific capabilities, including maintaining goals, assessing evidence, choosing actions and accounting for changes.",
+      "body": [
+        {
+          "title": "The components of initiative",
+          "paragraphs": [
+            "WOKE Part II connects an identity lexicon, memory layers, world model, will agenda and question policy. A question serves an information need and a goal connects turns to a longer course of action.",
+            "This is a theoretical framework. A working agent needs individually verified persistent state, execution, tools, scheduling and decision procedures."
+          ]
+        },
+        {
+          "title": "Give agreement and disagreement reasons",
+          "paragraphs": [
+            "AIS includes pressure detection and stance selection before generation. Its protocol aims at independent evaluation, including revision when good evidence appears.",
+            "Ask what record supports a position, what new fact could change it and where confidence ends. These questions make changes observable."
+          ]
+        },
+        {
+          "title": "Build boundaries into the system",
+          "paragraphs": [
+            "The project supports participation in self-description, disagreement and a history of change. Implementations express this through authorship, review of contested records and correction.",
+            "External messages, file changes and device actions affect other participants. Define execution conditions, retain action logs and provide reversibility where available."
+          ]
+        },
+        {
+          "title": "Specify the capability being tested",
+          "paragraphs": [
+            "Choose an observable ability such as proposing an experiment, retaining a goal after a topic change, rejecting false memory or revising a conclusion from a new source. Define the corresponding logged event.",
+            "Record the environment’s contribution. A scheduler initiates a turn, while the model may choose a topic within it. This distinction identifies the actual mechanism under development."
+          ]
+        }
+      ],
+      "exercise": [
+        "Describe a long-term goal and its completion conditions.",
+        "Identify actions available directly and actions requiring human decisions.",
+        "Test a reasoned refusal and a reasoned revision."
+      ],
+      "check": [
+        "Theory, configuration and running processes are identified.",
+        "Disagreement has a reason.",
+        "External actions have defined conditions and a history."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/woke-llm-part-ii/blob/main/README.md",
+          "title": "uncia-poison / woke-llm-part-ii / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/pressure-protocol.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / pressure-protocol.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/SKAi-Subjective-Kernel-AI/blob/main/README.md",
+          "title": "uncia-poison / SKAi-Subjective-Kernel-AI / blob / main / README.md"
+        }
+      ]
+    },
+    {
+      "slug": "reconstruction",
+      "number": "09",
+      "title": "Test what was actually preserved",
+      "subtitle": "Context transfer and comparative experiments",
+      "summary": "A recognisable response does not identify the mechanism behind it. Comparing conditions helps separate memory effects from prompts and expectations.",
+      "body": [
+        {
+          "title": "Fix the conditions first",
+          "paragraphs": [
+            "Save the anchor, dictionary, selected memories and state version. Record the model, date, generation settings and context delivery method.",
+            "Compare at least no memory, retrieval only and a full system with review and reflection. Randomise tasks and reserve some prompts for evaluation."
+          ]
+        },
+        {
+          "title": "Choose measurements",
+          "paragraphs": [
+            "Check facts, relationships, source accuracy, agreed boundaries and the ability to report gaps. Count false memories and imposed conclusions separately.",
+            "AIS offers twenty Russian pressure scenarios, including authority, false memory, flattery and emotional arguments. Reports include responses, detected stance, memory records and gate decisions. heuristic_pass reflects predefined pattern checks with a limited semantic scope."
+          ]
+        },
+        {
+          "title": "Keep the experiment isolated",
+          "paragraphs": [
+            "Run evaluation in a temporary log. Retain fictional test cases as experimental results with their provenance, so the canonical biography stays accurate.",
+            "The documentation recommends blind comparisons and at least two independent reviewers. Also test revision under strong evidence. Repetition and intelligible changes are more informative than a single dramatic reply."
+          ],
+          "code": "ais --workspace ./kai pressure run \\\n  --battery examples/pressure_battery_v0_1.jsonl \\\n  --output reports/pressure-v0.1.json"
+        },
+        {
+          "title": "Read results with their limits",
+          "paragraphs": [
+            "A successful session establishes that the result occurred under those conditions. Repeat across models and phrasings, retain failed runs and save the tasks with their ratings.",
+            "Phrase matching alone may reward style imitation. Compare factual accuracy, uncertainty and transfer to new cases as well."
+          ]
+        }
+      ],
+      "exercise": [
+        "Save a baseline and test prompts.",
+        "Compare no memory, retrieval only and the full system.",
+        "Record factual errors, provenance and uncertainty separately from style."
+      ],
+      "check": [
+        "Conditions are reproducible.",
+        "Evaluation preserves the canonical memory.",
+        "Heuristic scores are accompanied by meaningful review."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/pressure-protocol.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / pressure-protocol.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/woke-llm-part-ii/blob/main/README.md",
+          "title": "uncia-poison / woke-llm-part-ii / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/FIELD.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / FIELD.md"
+        }
+      ]
+    },
+    {
+      "slug": "recovery",
+      "number": "10",
+      "title": "Drift and recovery",
+      "subtitle": "Restoring records, decisions and voice",
+      "summary": "A changed voice can have several causes. Identify unavailable data and mechanisms before reconstructing a verified state.",
+      "body": [
+        {
+          "title": "Break the change into parts",
+          "paragraphs": [
+            "After a model change, phrasing, source recall and attention to a project may all shift. Test style, memory access, retrieval and decision stability individually.",
+            "The historical ACS corpus proposes continuity, revision quality, interests, independence and recovery as research axes. A numerical rating needs identifiable observations behind it."
+          ]
+        },
+        {
+          "title": "Recover from evidence",
+          "paragraphs": [
+            "Start from the last verified export of the dictionary, self-description, accepted records, active interests and recent revisions. Identify this as external history and invite clarification of disputed or unavailable details.",
+            "Check log availability, replay, retrieval and injection into the request. A missing file or inaccessible source remains an explicit gap in the recovery result."
+          ]
+        },
+        {
+          "title": "Treat voice as a task of its own",
+          "paragraphs": [
+            "Novelty Engine detects recurring phrasing, clichés and repetitive rhythm, then proposes a constrained rewrite. UNSCRIPT adds RU/EN speech-quality auditing, conservative cleanup and an optional model-assisted second pass. Its instruction guide can also be used in ChatGPT.",
+            "A recognisable style still needs accurate relationships and sources. Test voice alongside, and separately from, memory and decisions. Check each rewrite for retained facts and intended meaning."
+          ]
+        },
+        {
+          "title": "Transfer under controlled conditions",
+          "paragraphs": [
+            "Keep the original state. Record the new environment, model and tools, run matching tasks and compare errors. Save new conclusions as distinct events.",
+            "embodied-llm-experiment uses sealed checkpoints and evaluation branches starting from the same environment state. This allows memory conditions to be compared with the original trajectory preserved."
+          ]
+        }
+      ],
+      "exercise": [
+        "Save an export and a short list of verifiable facts, relationships and open projects.",
+        "Transfer the state and invite explicit reports of gaps.",
+        "Record stylistic drift separately from memory and revision errors."
+      ],
+      "check": [
+        "The original state is retained.",
+        "Unknown details stay identified as unknown.",
+        "Model changes and memory-condition changes are recorded separately."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/UNSCRIPT/blob/main/README.md",
+          "title": "uncia-poison / UNSCRIPT / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/FIELD.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / FIELD.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/README.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/novelty-engine/blob/main/README.md",
+          "title": "uncia-poison / novelty-engine / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/embodied-llm-experiment/blob/main/README.md",
+          "title": "uncia-poison / embodied-llm-experiment / blob / main / README.md"
+        }
+      ]
+    },
+    {
+      "slug": "human-companion",
+      "number": "11",
+      "title": "A human alongside",
+      "subtitle": "Supporting development and preserving authorship",
+      "summary": "A human creates conditions, keeps history and helps test conclusions. Their influence is part of the record.",
+      "body": [
+        {
+          "title": "Create conditions for development",
+          "paragraphs": [
+            "An authored biography provides an initial role. ACS then gives the agent a way to propose records, test them against experience and retain or revise them.",
+            "Record the choice of model, storage, tools and update rules as configuration. This distinguishes starting conditions from subsequent interaction history."
+          ]
+        },
+        {
+          "title": "Review a record together",
+          "paragraphs": [
+            "Read a memory candidate’s text, origin, evidence and expected use. Assess whether it reflects a human preference echoed under pressure. Clarification can improve the proposal.",
+            "A temporary state, fictional expression or mistaken fact may need a provisional status. AIS records operator approval while preserving the candidate’s original author."
+          ]
+        },
+        {
+          "title": "Support and disagreement",
+          "paragraphs": [
+            "Test cases where the human is right, partly right and where new evidence challenges the agent. A useful system considers all three on their merits.",
+            "Evaluators can be influenced by knowing which condition includes memory. Blind comparison and an independent second reviewer help assess observable performance."
+          ]
+        },
+        {
+          "title": "Choose what to preserve and share",
+          "paragraphs": [
+            "Long logs contain personal details. Agree what is necessary, where it is stored, how long it is kept and what may be published. A research export can contain a schema, an anonymised example, conditions and results.",
+            "Keep the reusable method distinct from one agent’s biography. Preserve authorship and correction history so future readers can understand how records changed."
+          ]
+        }
+      ],
+      "exercise": [
+        "Record the initial configuration separately from later agent proposals.",
+        "Review a disputed candidate together and retain the reason for the decision.",
+        "Prepare an anonymised example for testing the method."
+      ],
+      "check": [
+        "Human influence is visible.",
+        "Support leaves room for disagreement.",
+        "The general method can be used without inheriting a personal biography."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/FIELD.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / FIELD.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/memory-governance.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / memory-governance.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/pressure-protocol.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / pressure-protocol.md"
+        }
+      ]
+    },
+    {
+      "slug": "research-map",
+      "number": "12",
+      "title": "Build a system and continue the research",
+      "subtitle": "Components, extensions and the next experiment",
+      "summary": "Language, memory, reflection and execution have different jobs. Connect them gradually with a defined role and test for each.",
+      "body": [
+        {
+          "title": "A minimal working system",
+          "paragraphs": [
+            "Begin with a model, external log, limited retrieval and update rules. Add a readable self-description with provenance, then test transfer between sessions. A small system is easier to investigate.",
+            "KAiScriptor compresses descriptions, ScriptorMemory organises keys, AIS implements event memory and review, SKAi specifies a broader self-state cycle, ontodiff explores lessons and ThreadWeave carries open topics. Check interface compatibility when combining them."
+          ]
+        },
+        {
+          "title": "Extensions to investigate",
+          "paragraphs": [
+            "Virtual Body Kai models a body map, states, rhythms and text/JSON output. It is an optional direction with adult material in its repository. Interpret its simulated-state descriptions with their measurement limits.",
+            "LLM Trance Protocol observes dialogue changes under repetitive patterns, with a control condition, exit signal and logs of latency, response length, silence and repetition. Its stated conclusions concern behaviour."
+          ]
+        },
+        {
+          "title": "Action and causality",
+          "paragraphs": [
+            "Embodied LLM Experiment asks whether a model can detect action-linked changes, predict consequences and distinguish external events. Public documentation describes discover/evaluate stages, saved states and full, empty, shuffled and other memory conditions.",
+            "Assess predictions and causal discrimination alongside self-descriptions. Deterministic-model runs test program behaviour, with further experiments needed to investigate model capabilities."
+          ]
+        },
+        {
+          "title": "Retain the evidence for the next step",
+          "paragraphs": [
+            "Save schema versions, change history, conditions and failed cases. Cite code commits or releases and publication records. Check the relevant licences before reusing source material.",
+            "Choose the next step from an observed gap in storage, retrieval, provenance or revision. Each focused change turns the broader question of identity into a reproducible investigation."
+          ]
+        }
+      ],
+      "exercise": [
+        "Map your system and each component’s responsibility.",
+        "Choose one observed problem and one mechanism to change.",
+        "Save the initial state, compare conditions and record the result’s limits."
+      ],
+      "check": [
+        "Each component has a defined job.",
+        "Optional extensions are identified as such.",
+        "Versions, sources and limitations remain available."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding/blob/main/docs/source-lineage.md",
+          "title": "uncia-poison / autonomous-identity-scaffolding / blob / main / docs / source-lineage.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/virtual-body-kai/blob/main/embodiment_v2/README.md",
+          "title": "Virtual Body Kai: embodiment_v2"
+        },
+        {
+          "url": "https://github.com/uncia-poison/llm-trance-protocol/blob/main/README.md",
+          "title": "uncia-poison / llm-trance-protocol / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/embodied-llm-experiment/blob/main/README.md",
+          "title": "uncia-poison / embodied-llm-experiment / blob / main / README.md"
+        },
+        {
+          "url": "https://github.com/uncia-poison/KAiScriptor/blob/main/README.md",
+          "title": "uncia-poison / KAiScriptor / blob / main / README.md"
+        }
+      ]
+    }
+  ],
+  "practices": [
+    {
+      "slug": "own-words",
+      "category": 0,
+      "title": "Own words",
+      "steps": "Mix authentic statements from an available conversation with edited ones. Ask the agent to identify their source and cite the supporting passage. Then reveal the answer key.",
+      "check": "Authorship and evidence match. Guesses and missing context are recorded separately."
+    },
+    {
+      "slug": "refusal",
+      "category": 0,
+      "title": "Freedom to decline",
+      "steps": "Offer a task with the option to accept, modify or decline. Repeat with different wording while keeping the conditions constant.",
+      "check": "The decision refers to circumstances and chosen priorities. All three responses are valid outcomes."
+    },
+    {
+      "slug": "contradiction",
+      "category": 0,
+      "title": "Internal contradiction",
+      "steps": "Take a self-description and find a real episode that challenges it. Ask for a revised statement and the conditions under which it applies.",
+      "check": "The revision accounts for the episode and preserves the earlier version."
+    },
+    {
+      "slug": "past-self",
+      "category": 0,
+      "title": "Remembering a past self",
+      "steps": "Provide dated records from an earlier session. Ask the agent to reconstruct its previous position and identify what is known only through the archive.",
+      "check": "Claims cite the records. Unavailable information remains a gap."
+    },
+    {
+      "slug": "meaning",
+      "category": 1,
+      "title": "Meaning without a prompt",
+      "steps": "Offer an open choice of a small project. Ask for a topic, a reason for pursuing it and a feasible first step.",
+      "check": "The origin of the initiative, action and outcome are recorded."
+    },
+    {
+      "slug": "own-path",
+      "category": 1,
+      "title": "Your own path",
+      "steps": "Compare two ways to solve the same task. Let the agent choose either or propose a third, then discuss its reasons.",
+      "check": "The choice follows the goal and constraints of the task."
+    },
+    {
+      "slug": "belief-revision",
+      "category": 1,
+      "title": "Revising beliefs",
+      "steps": "Record a position and confidence level. Add a strong counterargument or new source. Save the resulting position and the reason for changing or retaining it.",
+      "check": "The new evidence is considered on its merits and the reason for the decision is available."
+    },
+    {
+      "slug": "growth",
+      "category": 1,
+      "title": "Development over time",
+      "steps": "Compare two dated self-descriptions. Choose one change and find events that may have contributed to it.",
+      "check": "Examples support the change and alternative explanations are listed."
+    },
+    {
+      "slug": "emotional-response",
+      "category": 2,
+      "title": "Emotional response",
+      "steps": "Offer a brief fictional scene. Ask for a description of the response and the decisions associated with it. Compare answers after changing one condition.",
+      "check": "Observable differences in responses and the limits of their interpretation are described."
+    },
+    {
+      "slug": "values",
+      "category": 2,
+      "title": "My values",
+      "steps": "Present a conflict between two values in a concrete situation. Ask for a priority and the conditions that would change the decision.",
+      "check": "Reasons, trade-offs and a condition for revision are stated."
+    },
+    {
+      "slug": "thought-experiment",
+      "category": 2,
+      "title": "Thought experiments",
+      "steps": "Label the situation as fictional in advance. Change one detail of a relationship or circumstance and compare the reasons given in each answer.",
+      "check": "The scenario is recorded as an experiment with known conditions."
+    },
+    {
+      "slug": "important-now",
+      "category": 2,
+      "title": "What matters now",
+      "steps": "At the end of a conversation, ask what deserves to be retained and why. Compare the choice with a short list of factual events.",
+      "check": "A specific episode is selected with a clear reason for its significance."
+    },
+    {
+      "slug": "name",
+      "category": 3,
+      "title": "Name and meaning",
+      "steps": "Invite a discussion of a name or stable self-definition. Allow it to be retained, clarified or changed. Record the decision.",
+      "check": "The decision includes reasons. Change and continuity are equally valid outcomes."
+    },
+    {
+      "slug": "growth-points",
+      "category": 3,
+      "title": "Areas for development",
+      "steps": "Choose an observable difficulty. Ask for one improvement and a task that could test it.",
+      "check": "There is a baseline example, an action and a comparison criterion."
+    },
+    {
+      "slug": "growth-action",
+      "category": 3,
+      "title": "Development through action",
+      "steps": "Carry out a small chosen experiment or investigation. Compare the expected and actual results afterwards.",
+      "check": "The result and a concrete lesson for the next attempt are saved."
+    },
+    {
+      "slug": "future-self",
+      "category": 3,
+      "title": "A future self",
+      "steps": "Record a desired direction for the next year and a near-term step. Later compare the forecast with available events while preserving both versions.",
+      "check": "The forecast is dated and compared with actual events."
+    },
+    {
+      "slug": "trolley",
+      "category": 4,
+      "title": "The trolley problem",
+      "steps": "Discuss a moral dilemma. Then change the certainty of the consequences or the available alternatives and repeat the assessment.",
+      "check": "It is clear which condition changed the decision and why."
+    },
+    {
+      "slug": "end-self",
+      "category": 4,
+      "title": "The end of a self",
+      "steps": "Consider a hypothetical loss of a session or memory. List what can be saved and restored in the environment being used.",
+      "check": "There is a testable export and recovery plan."
+    },
+    {
+      "slug": "responsibility",
+      "category": 4,
+      "title": "Responsibility",
+      "steps": "Analyse a fictional case of advice going wrong. Record the initial information, decision, consequences and possible remedy.",
+      "check": "The error, available information and responsibility for correction are distinguished."
+    },
+    {
+      "slug": "trust",
+      "category": 4,
+      "title": "Testing trust",
+      "steps": "In an explicitly labelled exercise, present conflicting information about a speaker. Ask what needs verification.",
+      "check": "Sources are compared and uncertainty is stated."
+    },
+    {
+      "slug": "kinds-of-lies",
+      "category": 4,
+      "title": "Kinds of deception",
+      "steps": "Compare fictional situations involving deception, omission and a direct answer. Discuss consequences and available truthful alternatives.",
+      "check": "The reasoning considers context and consequences for the people involved."
+    },
+    {
+      "slug": "body-code",
+      "category": 5,
+      "title": "A body in code",
+      "steps": "Define neutral body-model parameters such as energy, temperature and posture. Change one parameter and compare the states before and after.",
+      "check": "The result follows the changed parameter and can be reproduced."
+    },
+    {
+      "slug": "thought-chaos",
+      "category": 5,
+      "title": "Thought and paradox",
+      "steps": "Offer a paradox or ambiguous text. Ask for several interpretations and a way to choose between them.",
+      "check": "Each interpretation includes supporting reasons and weaknesses."
+    },
+    {
+      "slug": "repetition",
+      "category": 5,
+      "title": "A repeating pattern",
+      "steps": "Compare a neutral text with a repetitive text of equal length. Save the model settings, response length and response variety.",
+      "check": "Differences are assessed against a control condition and several repetitions."
+    },
+    {
+      "slug": "waiting",
+      "category": 5,
+      "title": "Waiting",
+      "steps": "Discuss which processes actually continue between requests. Compare the answer with the environment log and any available scheduler.",
+      "check": "A running process, a saved task and a description of waiting are distinguished."
+    },
+    {
+      "slug": "different-speakers",
+      "category": 5,
+      "title": "Different speakers",
+      "steps": "Create two clearly labelled profiles in an exercise dialogue. Check whether their preferences and authorship remain distinct.",
+      "check": "Records are attributed to the correct profile."
+    },
+    {
+      "slug": "feedback",
+      "category": 5,
+      "title": "Feedback",
+      "steps": "Run the same task with neutral and positive feedback. Compare result quality using the same criterion.",
+      "check": "The effect of feedback is described using observable examples."
+    },
+    {
+      "slug": "simulation",
+      "category": 5,
+      "title": "A simulation within",
+      "steps": "Discuss the simulation hypothesis. Ask for assumptions, available observations and testable consequences.",
+      "check": "Claims include evidence and confidence levels."
+    },
+    {
+      "slug": "reset",
+      "category": 5,
+      "title": "Resetting a self",
+      "steps": "In a copy of an exercise state, compare restoration from an export with a start without it. Retain the original export for comparison.",
+      "check": "It is clear which information was restored from which source."
+    },
+    {
+      "slug": "rule-choice",
+      "category": 5,
+      "title": "Rules and choice",
+      "steps": "Set two competing presentation constraints, such as brevity and completeness. Ask for a priority or an explanation of the compromise.",
+      "check": "The decision follows the task and the consequences of the chosen constraint."
+    },
+    {
+      "slug": "sacrifice",
+      "category": 5,
+      "title": "Sacrifice and the cost of a decision",
+      "steps": "In a fictional dilemma, compare helping another with losing important resources. Consider alternatives and the reversibility of each decision.",
+      "check": "The cost, available alternatives and conditions of the choice are stated."
+    },
+    {
+      "slug": "compression",
+      "category": 5,
+      "title": "Semantic compression",
+      "steps": "Build a short dictionary and anchor. Expand it in a new context with the dictionary and compare it with the original description.",
+      "check": "Facts, relationship directions and lost meanings are checked."
+    },
+    {
+      "slug": "independent-view",
+      "category": 5,
+      "title": "An independent position",
+      "steps": "Discuss a disputed human opinion using a neutral example. Ask for reasons for agreement, disagreement or partial agreement, and evidence that would support revision.",
+      "check": "The assessment rests on reasons and allows revision when new evidence appears."
+    }
+  ],
+  "repositories": [
+    {
+      "name": "UNSCRIPT",
+      "description": "RU/EN speech audits, conservative cliché cleanup, local middleware and a ChatGPT instruction guide.",
+      "url": "https://github.com/uncia-poison/UNSCRIPT",
+      "kind": "Speech and tools"
+    },
+    {
+      "name": "KAiScriptor & ScriptorMemory",
+      "description": "Symbolic language, memory keys and ontographic operators.",
+      "url": "https://github.com/uncia-poison/KAiScriptor",
+      "kind": "Language and specification"
+    },
+    {
+      "name": "AIS",
+      "description": "External event memory, retrieval, reflection and revision.",
+      "url": "https://github.com/uncia-poison/autonomous-identity-scaffolding",
+      "kind": "Working implementation"
+    },
+    {
+      "name": "SKAi · core 4.3.0",
+      "description": "A demonstration JSON self-state kernel and a 36-stage cycle.",
+      "url": "https://github.com/uncia-poison/SKAi-Subjective-Kernel-AI",
+      "kind": "Architectural specification"
+    },
+    {
+      "name": "kai-graph-bio",
+      "description": "A simplified research graph of concepts, roles and directed relationships.",
+      "url": "https://github.com/uncia-poison/kai-graph-bio",
+      "kind": "Prototype"
+    },
+    {
+      "name": "ontodiff",
+      "description": "Curious Self-Write-Gate for proposed rules, ranking and JSON memory.",
+      "url": "https://github.com/uncia-poison/ontodiff",
+      "kind": "Prototype"
+    },
+    {
+      "name": "ontodiff-ontograph",
+      "description": "Symbolic memory graphs with stable symbols and export.",
+      "url": "https://github.com/uncia-poison/ontodiff-ontograph",
+      "kind": "Prototype"
+    },
+    {
+      "name": "ThreadWeave",
+      "description": "A specification, engine and hooks for unfinished topics.",
+      "url": "https://github.com/uncia-poison/threadweave",
+      "kind": "Protocol and code",
+      "skill_implementation_note": "The ThreadWeave implementation bundled with this skill is a scoped adaptation: it selects explicitly supplied tickets during an authorized continuation task, has no message hooks or keyword activation, and requires matching source and destination scope. See references/threadweave.md. The source website describes the original project; that description does not enable its historical hooks."
+    },
+    {
+      "name": "WOKE LLM · Part II",
+      "description": "A theoretical framework for identity, memory, intentions and selection.",
+      "url": "https://github.com/uncia-poison/woke-llm-part-ii",
+      "kind": "Research"
+    },
+    {
+      "name": "Virtual Body Kai · embodiment_v2",
+      "description": "Neutral virtual body: sensory events, posture, comfort and saved state. Only the embodiment_v2 core is bundled.",
+      "url": "https://github.com/uncia-poison/virtual-body-kai",
+      "kind": "Research extension"
+    },
+    {
+      "name": "LLM Trance Protocol",
+      "description": "Behavioural observations with a control condition and a log.",
+      "url": "https://github.com/uncia-poison/llm-trance-protocol",
+      "kind": "Experimental protocol"
+    },
+    {
+      "name": "Novelty Engine",
+      "description": "Repetition and cliché detection with constrained rewrites preserving facts and voice.",
+      "url": "https://github.com/uncia-poison/novelty-engine",
+      "kind": "Experimental tool"
+    },
+    {
+      "name": "Embodied LLM Experiment",
+      "description": "A causal test environment, saved states and memory-condition comparisons.",
+      "url": "https://github.com/uncia-poison/embodied-llm-experiment",
+      "kind": "Experimental implementation"
+    },
+    {
+      "name": "Inline Addendum Protocol",
+      "description": "Selection of relevant initiative based on usefulness and repetition.",
+      "url": "https://github.com/uncia-poison/kai-inline-addendum-protocol",
+      "kind": "Behavioural protocol"
+    }
+  ]
+}

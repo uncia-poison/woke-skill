@@ -1,0 +1,30 @@
+{
+  "schema": "threadweave.input.v2",
+  "context": {
+    "thread_id": "CURRENT_THREAD",
+    "project_id": "CHOSEN_PROJECT",
+    "enabled": false,
+    "is_temporary": false,
+    "project_only": true,
+    "selected_ticket_ids": ["topic-1"],
+    "source_grants": [
+      {
+        "source_ref": "DESIGNATED_DOCUMENT",
+        "project_id": "CHOSEN_PROJECT",
+        "destination_thread_ids": ["CURRENT_THREAD"]
+      }
+    ]
+  },
+  "tickets": [
+    {
+      "id": "topic-1",
+      "label": "Replace with an actual selected open question",
+      "next_step": "Replace with the actual next step",
+      "source_ref": "DESIGNATED_DOCUMENT",
+      "origin_thread_id": "PREVIOUS_THREAD",
+      "project_id": "CHOSEN_PROJECT",
+      "status": "open",
+      "priority": 0
+    }
+  ]
+}

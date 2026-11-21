@@ -1,0 +1,11 @@
+{
+  "name": "An exercise record",
+  "event": "Replace with the actual event or supplied exercise output.",
+  "interpretation": "Replace with the proposed interpretation.",
+  "origin": "agent_proposed",
+  "status": "draft",
+  "next": "Specify the next check.",
+  "practice_slug": "compression",
+  "sources": [],
+  "namespace": "exercises"
+}
