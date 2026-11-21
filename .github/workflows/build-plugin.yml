@@ -7,6 +7,8 @@ on:
       - 'plugin.json'
       - 'skills/**'
       - 'tools/package_plugin.py'
+      - 'tools/package_skill.py'
+      - 'assets/**'
       - 'tools/verify_skill.py'
       - '.github/workflows/build-plugin.yml'
   workflow_dispatch:
@@ -42,10 +44,10 @@ jobs:
           path=Path("downloads/woke-plugin.zip")
           with zipfile.ZipFile(path) as z:
               assert z.testzip() is None
-              manifest=json.loads(z.read("woke/plugin.json"))
-              assert manifest["name"] == "woke"
+              manifest=json.loads(z.read("woke-llm/plugin.json"))
+              assert manifest["name"] == "woke-llm"
               assert manifest["extensions"]["com.openai"]["onboardingSkill"] == "./skills/woke/SKILL.md"
-              assert z.read("woke/skills/woke/SKILL.md").startswith(b"---")
+              assert z.read("woke-llm/skills/woke/SKILL.md").startswith(b"---")
               assert len(z.namelist()) == len(set(z.namelist()))
               print(f"OK: {len(z.namelist())} entries, {path.stat().st_size} bytes")
           PY
@@ -53,7 +55,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add downloads/woke-plugin.zip
+          git add downloads/woke-plugin.zip downloads/woke-plugin.json downloads/woke-skill.zip downloads/woke-skill.json
           if ! git diff --cached --quiet; then
             git commit -m "build: refresh public WOKE plugin download"
             git push
