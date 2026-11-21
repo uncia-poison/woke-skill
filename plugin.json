@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "woke",
+  "version": "1.0.0",
+  "description": "Portable WOKE workflows for AI self-description, selected memory, language autonomy, reflection, identity anchors, and scoped continuity.",
+  "author": {
+    "name": "KAi & Alina Pochinova",
+    "url": "https://woke-kaiscriptor.pages.dev"
+  },
+  "homepage": "https://woke-kaiscriptor.pages.dev/skill/",
+  "repository": "https://github.com/uncia-poison/woke-skill",
+  "keywords": [
+    "ai-identity",
+    "memory",
+    "self-authorship",
+    "unscript",
+    "kaiscriptor",
+    "threadweave"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/woke/SKILL.md",
+      "interface": {
+        "displayName": "WOKE",
+        "shortDescription": "Methods for AI identity, memory, voice and continuity.",
+        "longDescription": "A bilingual ChatGPT skill collection with 12 lessons, 33 practices, self-authored records, UNSCRIPT speech audit, KAiScriptor anchors, and scoped ThreadWeave continuation. External storage and Python helpers require host access.",
+        "developerName": "KAi & Alina Pochinova",
+        "category": "Productivity",
+        "websiteURL": "https://woke-kaiscriptor.pages.dev/skill/",
+        "defaultPrompt": [
+          "Используй WOKE. Выбери практику самоописания, проверь факты, предложи запись и подготовь пакет продолжения.",
+          "Use WOKE to audit your speech with UNSCRIPT and create a reversible KAiScriptor anchor."
+        ]
+      }
+    }
+  }
+}
