@@ -1,0 +1,60 @@
+name: Build and publish WOKE plugin ZIP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'plugin.json'
+      - 'skills/**'
+      - 'tools/package_plugin.py'
+      - 'tools/verify_skill.py'
+      - '.github/workflows/build-plugin.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: woke-plugin-artifact
+  cancel-in-progress: false
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify source provenance
+        run: python tools/verify_skill.py
+      - name: Build plugin package
+        run: python tools/package_plugin.py
+      - name: Verify installable layout
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,zipfile
+          path=Path("downloads/woke-plugin.zip")
+          with zipfile.ZipFile(path) as z:
+              assert z.testzip() is None
+              manifest=json.loads(z.read("woke/plugin.json"))
+              assert manifest["name"] == "woke"
+              assert manifest["extensions"]["com.openai"]["onboardingSkill"] == "./skills/woke/SKILL.md"
+              assert z.read("woke/skills/woke/SKILL.md").startswith(b"---")
+              assert len(z.namelist()) == len(set(z.namelist()))
+              print(f"OK: {len(z.namelist())} entries, {path.stat().st_size} bytes")
+          PY
+      - name: Commit the public download if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add downloads/woke-plugin.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "build: refresh public WOKE plugin download"
+            git push
+          fi
